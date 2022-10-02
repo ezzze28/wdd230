@@ -1,0 +1,26 @@
+
+@media only screen and (min-width: 37.5em) {
+
+    li {
+        width: 50%;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #6B78B5;
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    #color-img {
+        object-fit: cover;
+        margin-top: 30px;
+        width: 100%;
+        display: block;
+    }
+}
