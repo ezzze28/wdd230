@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body{
+    height: 100vh;
+    width: 100%;
+    max-width: 1600px;
+    background-color: #E7E7E7;
+    font-family: 'Fira Code', monospace;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 30px;
+    color: #222222;
+    text-align: center;
+}
+
+#back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+#back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#back-button img {
+  width: 30px;
+  height: 30px;
+}
