@@ -78,12 +78,12 @@ main{
 footer{
     background-color: #222222;
     color:#E7E7E7;
-    text-align: right;
+    text-align: center;
     border-radius: 0px 0px 10px 10px;
     padding-top: 1px;
 }
 
 .footer_cont{
-    margin-right: 20px;
     font-size: small;
+    padding-bottom: 5px;
 }
