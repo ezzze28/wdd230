@@ -1,3 +1,9 @@
+:root{
+    --primary: #5E0B0E;
+    --secondary: #361C18;    
+    --accent1: #D6AE81;
+    --accent2: #120B0E;
+}
 
 * {box-sizing: border-box;}
 
@@ -5,12 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: var(--primary);
+    color: var(--accent1);
 }
 
 header, footer {
-    background-color: #034693;
     text-align: center;
-    color: white;
     text-shadow: 1px 1px black;
     font-family: 'Libre Baskerville', serif;
     
@@ -21,6 +27,7 @@ nav {
 }
 
 footer {
+    background-color: var(--secondary);
     margin-top: 40px;
     padding: 14px;
     min-height: 4em;
@@ -54,7 +61,7 @@ p {
 }
 
 a {
-    color: white;
+    color: var(--accent1);
     text-decoration: none;
     width: 100%;
 }
@@ -77,21 +84,12 @@ li {
     display: flex;
     justify-content: center;
     padding: 8px;
-    background-color: #6B78B5;
+    background-color: var(--secondary);
 }
 
 .link-div:hover {
-    background-color: #DAA010;
+    background-color: var(--accent2);
     font-weight: 600;
-}
-
-.home-link, 
-.color-link, 
-.typo-link, 
-.target-link {
-    background-color: #DAA010;
-    font-weight: 600;
-    color: #ffff;
 }
 
 .color-li {
@@ -99,6 +97,7 @@ li {
     margin-top: 10px;
     border: 1px solid black;
 }
+
 .hex {
     width: 80px;
     font-weight: 600;
@@ -121,44 +120,39 @@ li {
     padding-bottom: 10px;
 }
 
-#the_time {
-    font-size: 1.1rem;
-    color: white;
-}
-
 #colors {
     display: flex;
     flex-direction: column;
     width: 100%;
     line-height: 2em;
+    background-color: #e7e7e7;
+    padding: 5px;
+    color: #222222;
 } 
 
 #primary_color {
-    background-color: #034693;
+    background-color: var(--primary);
 }
 
-#accent_color {
-    background-color: #6470C5;
+#secondary_color {
+    background-color: var(--secondary);
 }
 
-#secundary_color {
-    background-color: #DAA010;
+#accent1_color {
+    background-color: var(--accent1);
 }
 
 #accent2_color {
-    background-color: #EC1C23;
+    background-color: var(--accent2);
 }
 
 #color-img {
     display: none;
 }
 
-#domain_img {
-    display: none;
-}
-
 #logo-img,
-#sample-text-img {
+#sample-text-img,
+#domain_img {
     object-fit: cover;
     width: 100%;
     max-width: 650px;
