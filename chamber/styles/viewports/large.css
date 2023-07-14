@@ -1,0 +1,7 @@
+hr {
+    height: 2px;
+    margin: 20px 0;
+    background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
+    border: none;
+    width: 100%;
+  }

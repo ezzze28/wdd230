@@ -1,0 +1,218 @@
+:root{
+  --primary: #5E0B0E;
+  --secondary: #120B0E;
+  --accent1: #D6AE81;
+  --accent2: #361C18;
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: auto;
+  }
+  
+  .headerInfo .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  
+  .hamburger {
+    display: block;
+    order: 1;
+  }
+  .mainMenu{
+    display: none;
+  }
+  .toggleMenu{
+    background: linear-gradient(to right, var(--primary), var(--secondary), var(--primary));
+    flex-grow: 0; 
+    max-width: 1600px;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no wrap;
+    padding: 20px 20px;
+    height: 275px;
+  }
+  
+  .toggleMenu li{
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 10px 20px;
+  }
+  
+  .toggleMenu li a {
+    text-decoration: none;
+    color: var(--accent1);
+  }
+  
+  .toggleMenu li a:hover {
+    color: var(--accent1);
+  }
+  
+  .toggleMenu {
+    flex-wrap: wrap;
+    border: none;
+    border-top: 1.5px solid var(--accent1);
+    margin-bottom: -30px;
+    display: none;
+    flex-direction: column;
+  
+  }
+  .toggleMenu.active {
+    display: block;
+  }
+  .socialsHeader {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;  
+    padding-right: 60px;
+  }
+  
+  .socialsHeader i {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+  }
+  
+  .socialsHeader a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: var(--accent1);
+  
+  }
+  
+  .socialsHeader a:hover {
+    color: var(--accent2);
+  }
+  /* Main */
+  
+  /* Footer */
+  
+  footer {
+      text-align: center;
+      padding: 10px 10px;
+    }
+    
+    footer a {
+      text-decoration: none;
+      color: var(--accent1);
+      font-weight: 500;
+    }
+    
+    footer a:hover {
+      text-decoration: none;
+      color: var(--accent2);
+      font-weight: 500;
+    }
+    
+    .footerContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .footerLogoContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-basis: 33%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      font-size: 20px;
+    }
+    
+    #footerLogoInfo {
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      height: auto;
+    }
+  
+    #footerTile {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 600;
+      margin-bottom: 3px;
+      font-size: 16px;
+  
+    }
+    #logoFooter {
+      width: 320px;
+      padding-right: 90px;
+    }
+    
+    .contacts {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 33%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    
+    .contacts p {
+      margin-bottom: -5px;
+      margin: 0;
+    }
+    
+    hr {
+      height: 2px;
+      margin: 20px 0;
+      background: linear-gradient(to right, var(--secondary) 10%, var(--primary), var(--secondary));
+      border: none;
+      width: 100%;
+    }
+    
+    #firstLineFooter,
+    #secondLineFooter {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    #firstLineFooter {
+      width: 100%;
+      padding: 0;
+      color: var(--accent2);
+      text-align: center;
+      font-size: 13px;
+    }
+    #firstLineFooter p {
+      margin-bottom: 5px;
+      margin-right: 10px;
+    }
+    
+    #secondLineFooter {
+      color: var(--accent2);
+      font-weight: 100;
+      font-style: italic;
+    }
+    
+    #firstLineFooter p:not(:last-child)::after {
+      content: " |";
+      display: inline;
+    }
+    

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lesson 7: Prepare activity, Progressive Loading of Images,  WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/lazyload.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <title>Progressive Loading of Images</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Progressive Loading of Images</h1>
+      </div>
+    </header>
+    <main>
+      <section id="imagesContainer">
+        <picture class="imageContainer">
+          <img
+            src="https://placehold.co/300x400/dddddd/dddddd"
+            data-src="./images/choco-1.webp"
+            alt="Chocolates"
+            loading="lazy"
+            
+          />
+        </picture>
+        <picture class="imageContainer">
+          <img
+            src="https://placehold.co/300x400/dddddd/dddddd"
+            data-src="./images/choco-2.webp"
+            alt="Chocolates"
+            loading="lazy"
+
+          />
+        </picture>
+        <picture class="imageContainer">
+          <img
+            src="https://placehold.co/300x400/dddddd/dddddd"
+            data-src="./images/choco-3.webp"
+            alt="Chocolates"
+            loading="lazy"
+
+          />
+        </picture>
+        <picture class="imageContainer">
+          <img
+            src="https://placehold.co/300x400/dddddd/dddddd"
+            data-src="./images/choco-4.webp"
+            alt="Chocolates"
+            loading="lazy"
+
+          />
+        </picture>
+        <picture class="imageContainer">
+          <img
+            src="https://placehold.co/300x400/dddddd/dddddd"
+            data-src="./images/choco-5.webp"
+            alt="Chocolates"
+            loading="lazy"
+
+          />
+        </picture>
+        <picture class="imageContainer">
+          <img
+            src="https://placehold.co/300x400/dddddd/dddddd"
+            data-src="./images/choco-6.webp"
+            alt="Chocolates"
+            loading="lazy"
+
+          />
+        </picture>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p id="firstLineFooter">
+          &copy;<span id="currentYear"></span>  - Ezequiel Nicolidakis - Montevideo, 🇺🇾 </p>
+        <p id="secondLineFooter"></p>
+      </div>
+    </footer>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/lazyload.js" defer></script>
+  </body>
+</html>
