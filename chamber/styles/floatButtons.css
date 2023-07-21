@@ -1,9 +1,11 @@
-  .float-buttons .home{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1000000;
-  }
+:root{
+  --primary: #5E0B0E;
+  --secondary: #361C18;    
+  --accent1: #D6AE81;
+  --accent2: #120B0E;
+}
+
+
   .float-button {
     display: flex;
     align-items: center;
@@ -11,27 +13,16 @@
     width: 70px;
     height: 70px;
     border-radius: 20%;
-    background: linear-gradient(to right, #016485, #e4f7c3, #016485);
-  border: solid 1px #016688;
-  box-shadow: 3px 3px 30px #034c64;
+    background: transparent;
+    border: solid 1px var(--accent1);
     margin-bottom: 10px;
     text-decoration: none;
   }
 
   .float-button:hover {
     background: linear-gradient(to right, #e4f7c3, #016485, #e4f7c3);
-    border: solid 1px #016485;
+    border: solid 1px #e4f7c3;
     transition: all 0.2s ease-in-out;
-
-  }
-  .float-button:hover.home i {
-    color: #e4f7c3;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .float-button.home i{
-    color: #016485;
-    font-size: 40px;
   }
   
   .float-buttons .views{
@@ -42,9 +33,7 @@
     width: 30px;
     height: 30px;
     border-radius: 12px;
-    background: linear-gradient(to right, #016485, #e4f7c3, #016485);
-  border: solid 1px #016688;
-  box-shadow: 3px 3px 30px #034c64;
+    background: transparent;
     margin-bottom: 10px;
     text-decoration: none;
   }
@@ -54,6 +43,6 @@
   }
   
   .float-button.views i{
-    color: #016485;
+    color: var(--accent1);
     font-size: 20px;
   }
