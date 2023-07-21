@@ -1,0 +1,124 @@
+{
+  "companies": [
+    {
+      "name": "ABC Corporation",
+      "address": "123 Main Street",
+      "email": "abc_corp@example.com",
+      "phone": "123456789",
+      "url": "https://www.abccorp.com",
+      "image": "./images/Directory/image3.webp",
+      "membership_level": "Platinum",
+      "additional_information": "ABC Corporation is a leading provider of innovative solutions in the technology industry."
+    },
+    {
+      "name": "XYZ Industries",
+      "address": "456 Oak Avenue",
+      "phone": "987654321",
+      "email": "info@xyzindustries.com",
+      "url": "https://www.xyzindustries.com",
+      "image": "./images/Directory/image2.webp",
+      "membership_level": "Gold",
+      "additional_information": "XYZ Industries is a renowned manufacturing company specializing in precision engineering."
+    },
+    {
+      "name": "Smith & Co.",
+      "address": "789 Elm Street",
+      "phone": "555555555",
+      "email": "contact@smithco.com",
+      "url": "https://www.smithandco.com",
+      "image": "./images/Directory/image1.webp",
+      "membership_level": "Silver",
+      "additional_information": "Smith & Co. is a trusted name in the financial industry, providing comprehensive investment and wealth management services."
+    },
+    {
+      "name": "Johnson Enterprises",
+      "address": "321 Maple Avenue",
+      "phone": "444444444",
+      "email": "info@johnsonenterprises.com",
+      "url": "https://www.johnsonenterprises.com",
+      "image": "./images/Directory/image4.webp",
+      "membership_level": "Gold",
+      "additional_information": "Johnson Enterprises is a leading construction company with expertise in residential and commercial projects."
+    },
+    {
+      "name": "Anderson Solutions",
+      "address": "555 Pine Street",
+      "phone": "222222222",
+      "email": "contact@andersonsolutions.com",
+      "url": "https://www.andersonsolutions.com",
+      "image": "./images/Directory/image5.webp",
+      "membership_level": "Silver",
+      "additional_information": "Anderson Solutions is a trusted provider of IT consulting and software development services."
+    },
+    {
+      "name": "Brown & Associates",
+      "address": "777 Cedar Avenue",
+      "phone": "999999999",
+      "email": "info@brownandassociates.com",
+      "url": "https://www.brownandassociates.com",
+      "image": "./images/Directory/image6.webp",
+      "membership_level": "Bronze",
+      "additional_information": "Brown & Associates is a full-service law firm committed to providing exceptional legal representation."
+    },
+    {
+      "name": "Wilson Technologies",
+      "address": "888 Oak Street",
+      "phone": "777777777",
+      "email": "contact@wilsontech.com",
+      "url": "https://www.wilsontech.com",
+      "image": "./images/Directory/image7.webp",
+      "membership_level": "Silver",
+      "additional_information": "Wilson Technologies is a leading provider of innovative software solutions for businesses across industries."
+    },
+    {
+      "name": "Miller Solutions",
+      "address": "666 Maple Avenue",
+      "phone": "666666666",
+      "email": "sales@millersolutions.com",
+      "url": "https://www.millersolutions.com",
+      "image": "./images/Directory/image8.webp",
+      "membership_level": "Bronze",
+      "additional_information": "Miller Solutions is a trusted supplier of industrial equipment and machinery."
+    },
+    {
+      "name": "Clark Enterprises",
+      "address": "333 Elm Street",
+      "phone": "333333333",
+      "email": "info@clarkenterprises.com",
+      "url": "https://www.clarkenterprises.com",
+      "image": "./images/Directory/image9.webp",
+      "membership_level": "Silver",
+      "additional_information": "Clark Enterprises is a family-owned business with a rich heritage in the hospitality industry."
+    },
+    {
+      "name": "Safe wallet",
+      "address": "123 Safe Street",
+      "email": "hello@safewallet.com",
+      "phone": "999999999999",
+      "url": "https://www.abccorp.com",
+      "image": "./images/Directory/image10.webp",
+      "membership_level": "Gold",
+      "additional_information": "Safe wallet is a leading provider of innovative software solutions for businesses investment."
+    },
+    {
+      "name": "Trading Academy",
+      "address": "462 Main Street",
+      "email": "info@tradingacademy.com",
+      "phone": "123456789",
+      "url": "https://www.tradingacademy.com",
+      "image": "./images/Directory/image11.webp",
+      "membership_level": "Silver",
+      "additional_information": "Trading Academy is a leading provider of innovative certifications in the trading and finances industry."
+    },
+    {
+      "name": "Unity Health",
+      "address": "1998 Saint George",
+      "email": "info@unityhealth.com",
+      "phone": "123456789",
+      "url": "https://www.unityhealth.com",
+      "image": "./images/Directory/image12.webp",
+      "membership_level": "Gold",
+      "additional_information": "Unity Health is a leading provider of innovative solutions in the health and medicine industry."
+    }
+  ]
+}

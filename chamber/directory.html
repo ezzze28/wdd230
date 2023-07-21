@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to Horizon Chamber, your gateway to a vibrant business community. 
-    Discover endless opportunities for growth, collaboration, and success. Our chamber connects entrepreneurs, 
-    professionals, and visionaries, fostering innovation and nurturing relationships. Explore our comprehensive directory, 
-    empowering resources, and dynamic events to elevate your business to new horizons. Join us today and unlock the possibilities of 
-    a thriving tomorrow."
+      content="Explore the directory of business that trust in Horizon Chamber."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
     <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +21,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/lazyload.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/gridAndListDirectory.css" />
     <link
       rel="stylesheet"
       href="./styles/viewports/base.css"
@@ -38,7 +41,7 @@
       media="screen and (min-width: 1025px)"
     />
     <link rel="stylesheet" href="./styles/grid.css" />
-    <title>Horizon Chamber: Expanding Business Horizons Together | Home</title>
+    <title>Horizon Chamber | Directory</title>
   </head>
   <body>
     <header>
@@ -54,7 +57,6 @@
             <div class="title">Expanding Business Horizons Together</div>
           </div>
         </div>
-
         <nav>
           <ul class="mainMenu">
             <li><a href="index.html">Home</a></li>
@@ -65,10 +67,10 @@
           </ul>
         </nav>
         <div class="socialsHeader">
-          <a href="https://www.facebook.com/"
+          <a href="https://www.facebook.com/profile"
             ><i class="fab fa-facebook-square" id="facebook"></i
           ></a>
-          <a href="https://www.linkedin.com/"
+          <a href="https://www.linkedin.com/in/profile"
             ><i class="fab fa-linkedin" id="linkedIn"></i
           ></a>
           <button class="hamburger" id="hamburgerChamber">
@@ -94,78 +96,18 @@
 
     <main>
       <div id="banner" class="hidden">
-        Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
-            <div class="grid-container">
-        <div class="gridArea1">
-          <div class="gridAreatitle" id="event">
-            <h2>Event</h2>
-            <h4><i class="fas fa-star"></i> Webinar: Expanding Your Horizons <i class="fas fa-star"></i></h4>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Join us for the grand opening of the Diamond Shack, Thursday at
-              5:00 p.m.
-            </p>
-            <a id="moreInfoLink" href="join.html">More info...</a>
-          </div>
-        </div>
-        <div class="gridArea2" id="weather">
-        </div>
-        <div class="gridArea3" id="join">
-          <div class="gridAreatitle">
-            <button><a href="join.html"> Join Us!</button>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Discover how to join the chamber of commerce and how it benefit
-              your organization!
-            </p>
-          </div>
-        </div>
-        <div class="gridArea4" id="hero">
-
-          <!-- Image optimizated -->
-          <picture id="responsiveImage">
-            <!-- Tablet -->
-            <source
-              media="(min-width 600px) and (max-width: 799px)"
-              srcset="./images/Hero-File/wdd230-tablet.webp"
-            />
-            <!-- Desktop -->
-            <source
-              media="(min-width: 1500px)"
-              srcset="./images/Hero-File/wdd230-1500.webp"
-            />
-            <!-- Mobile -->
-            <img src="./images/Hero-File/wdd230-mobile.webp" alt="Hero Image" />
-          </picture>
-
-          <div class="gridAreatitle">
-            <h2>Horizon Chamber : Expanding Horizons</h2>
-          </div>
-          <div class="gridAreaContent">
-            <button> <a href="join.html">Join the chamber</a></button>
-          </div>
-        </div>
-        <div class="gridArea5" id="newsRelease">
-          <div class="gridAreatitle">
-            <h2>News release</h2>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Business Empowerment Program: Our flagship initiative is a 
-              comprehensive business mentoring program that pairs experienced
-              industry leaders with aspiring entrepreneurs. Through personalized
-              guidance and support, we aim to nurture innovative ideas, unlock 
-              potential, and enhance overall business strategies.
-            </p>
-          </div>
-        </div>
-
-        <div class="spotlights" id="spotlights">
-        </div>
+      
+      <div class="menu">
+        <h2 class="section-title">
+          Directory of Registered Businesses in Our Chamber
+        </h2>
+        <button id="grid" class="active"><i class="fas fa-th"></i></button>
+        <button id="list"><i class="fas fa-list-alt"></i></button>
       </div>
+
+      <div class="grid" id="dataContainer"></div>
     </main>
 
     <footer>
@@ -204,9 +146,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="./scripts/lazyload.js" defer></script>
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/weatherapi.js" defer></script>
-    <script src="./scripts/spotlightsapi.js" defer></script>    
+    <script src="./scripts/directory.js" defer></script>
   </body>
 </html>

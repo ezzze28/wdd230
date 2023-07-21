@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to Horizon Chamber, your gateway to a vibrant business community. 
-    Discover endless opportunities for growth, collaboration, and success. Our chamber connects entrepreneurs, 
-    professionals, and visionaries, fostering innovation and nurturing relationships. Explore our comprehensive directory, 
-    empowering resources, and dynamic events to elevate your business to new horizons. Join us today and unlock the possibilities of 
-    a thriving tomorrow."
+      content="Thanks page for new members of the Chamber"
     />
     <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +33,9 @@
       href="./styles/viewports/large.css"
       media="screen and (min-width: 1025px)"
     />
-    <link rel="stylesheet" href="./styles/grid.css" />
-    <title>Horizon Chamber: Expanding Business Horizons Together | Home</title>
+    <title>Horizon Chamber | Contact Success</title>
   </head>
+
   <body>
     <header>
       <div class="headerInfo">
@@ -64,6 +60,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
         <div class="socialsHeader">
           <a href="https://www.facebook.com/"
             ><i class="fab fa-facebook-square" id="facebook"></i
@@ -96,76 +93,13 @@
       <div id="banner" class="hidden">
         Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
-            <div class="grid-container">
-        <div class="gridArea1">
-          <div class="gridAreatitle" id="event">
-            <h2>Event</h2>
-            <h4><i class="fas fa-star"></i> Webinar: Expanding Your Horizons <i class="fas fa-star"></i></h4>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Join us for the grand opening of the Diamond Shack, Thursday at
-              5:00 p.m.
-            </p>
-            <a id="moreInfoLink" href="join.html">More info...</a>
-          </div>
-        </div>
-        <div class="gridArea2" id="weather">
-        </div>
-        <div class="gridArea3" id="join">
-          <div class="gridAreatitle">
-            <button><a href="join.html"> Join Us!</button>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Discover how to join the chamber of commerce and how it benefit
-              your organization!
-            </p>
-          </div>
-        </div>
-        <div class="gridArea4" id="hero">
-
-          <!-- Image optimizated -->
-          <picture id="responsiveImage">
-            <!-- Tablet -->
-            <source
-              media="(min-width 600px) and (max-width: 799px)"
-              srcset="./images/Hero-File/wdd230-tablet.webp"
-            />
-            <!-- Desktop -->
-            <source
-              media="(min-width: 1500px)"
-              srcset="./images/Hero-File/wdd230-1500.webp"
-            />
-            <!-- Mobile -->
-            <img src="./images/Hero-File/wdd230-mobile.webp" alt="Hero Image" />
-          </picture>
-
-          <div class="gridAreatitle">
-            <h2>Horizon Chamber : Expanding Horizons</h2>
-          </div>
-          <div class="gridAreaContent">
-            <button> <a href="join.html">Join the chamber</a></button>
-          </div>
-        </div>
-        <div class="gridArea5" id="newsRelease">
-          <div class="gridAreatitle">
-            <h2>News release</h2>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Business Empowerment Program: Our flagship initiative is a 
-              comprehensive business mentoring program that pairs experienced
-              industry leaders with aspiring entrepreneurs. Through personalized
-              guidance and support, we aim to nurture innovative ideas, unlock 
-              potential, and enhance overall business strategies.
-            </p>
-          </div>
-        </div>
-
-        <div class="spotlights" id="spotlights">
-        </div>
+      <div class="section-title" id="mainTitle">
+        <h1>Thank you for contacting Horizon Chamber of Commerce, <span id="joinedMember"></span>!</h1>
+        <h6>We'll be in touch soon.</h6>
       </div>
+      <section class="form-section">
+        <div id="newMember"></div>
+      </section>
     </main>
 
     <footer>
@@ -188,14 +122,15 @@
         <div class="contacts">
           <p>info@horizonchamber.org</p>
           <p>(+1) 230 228 827</p>
-          <a href="https://goo.gl/maps/3zsWo1GrdJkt2Bx38" target="_blank"><i class="fas fa-thumbtack"></i> Location Map </a>
+          <a href="https://goo.gl/maps/3zsWo1GrdJkt2Bx38" target="_blank"><i class="fas fa-thumbtack"></i> Location Map </a>  
+          </p>
         </div>
         <hr />
         <div>
           <div id="firstLineFooter">
             <p>&copy;<span id="currentYear"></span> Horizon Chamber</p>
             <p>
-              <a href="https://www.linkedin.com/in/eze-nicolidakis/"
+              <a href="https://www.linkedin.com/in/ezze28/"
                 >Ezequiel Nicolidakis</a>
             </p>
             <p>WDD 230 Project</p>
@@ -206,7 +141,6 @@
     </footer>
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/weatherapi.js" defer></script>
-    <script src="./scripts/spotlightsapi.js" defer></script>    
+    <script src="./scripts/formResponseContact.js" defer></script>
   </body>
 </html>

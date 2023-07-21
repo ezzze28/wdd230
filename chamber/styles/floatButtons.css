@@ -1,0 +1,59 @@
+  .float-buttons .home{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000000;
+  }
+  .float-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    background: linear-gradient(to right, #016485, #e4f7c3, #016485);
+  border: solid 1px #016688;
+  box-shadow: 3px 3px 30px #034c64;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .float-button:hover {
+    background: linear-gradient(to right, #e4f7c3, #016485, #e4f7c3);
+    border: solid 1px #016485;
+    transition: all 0.2s ease-in-out;
+
+  }
+  .float-button:hover.home i {
+    color: #e4f7c3;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .float-button.home i{
+    color: #016485;
+    font-size: 40px;
+  }
+  
+  .float-buttons .views{
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+    z-index: 1000000;
+    width: 30px;
+    height: 30px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #016485, #e4f7c3, #016485);
+  border: solid 1px #016688;
+  box-shadow: 3px 3px 30px #034c64;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  .float-button:hover.views i {
+    color: #e4f7c3;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .float-button.views i{
+    color: #016485;
+    font-size: 20px;
+  }

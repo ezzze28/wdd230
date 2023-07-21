@@ -1,0 +1,159 @@
+:root{
+	--primary: #5E0B0E;
+	--secondary: #361C18;    
+	--accent1: #D6AE81;
+	--accent2: #120B0E;
+  }
+
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background: transparent;
+	max-width: 100%;
+}
+
+/* Grid */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+	padding: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.grid section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 1rem;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+	height: auto;
+	width: 150px;
+	max-width: 100%;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h2 {
+	font-family: 'Libre Baskerville', serif;
+	-webkit-text-fill-color: var(--accent1);
+}
+
+.grid a,
+.list a {
+	margin-top: 10px;
+	font-size: 13px;
+	letter-spacing: 0px;
+	text-decoration: none;
+	transition: all 0.3s;
+	color: var(--accent1);
+}
+
+.grid a:hover,
+.list a:hover {
+	color: #ce7420;
+	letter-spacing: 0.3px;
+}
+
+.grid p {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.grid .membership-level {
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.grid .aditional-info {
+	padding: 5px 10px;
+}
+
+/* List */
+.list hr{
+	display: none;
+}
+section h2
+ {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	letter-spacing: 1.1pt;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	width: 98%;
+	padding: 10px 0;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* Solo para pantallas más pequeñas */
+}
+
+.list section h2 {
+	font-size: 1rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-text-fill-color: var(--accent1);
+}
+
+.list section:nth-child(even) {
+	background: transparent;
+  }
+  
+  .list section:nth-child(odd) {
+	background: transparent;
+  }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+	section p,
+	section a,
+	.list section h3 {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section h3,
+	.list section h3 {
+		font-size: 14px;
+	}
+}
