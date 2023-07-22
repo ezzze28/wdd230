@@ -1,0 +1,26 @@
+.google-maps {
+  --google-maps-width: 660px; /* Valor inicial */
+  --google-maps-height: 450px; /* Valor inicial */
+}
+
+.google-maps iframe {
+  width: var(--google-maps-width);
+  height: var(--google-maps-height);
+  border: 0;
+}
+
+/* Estilos adicionales si es necesario */
+.google-maps iframe {
+  padding: 2px;
+  background-color: #00445a;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px #000000;
+}
+
+.google-maps iframe:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}

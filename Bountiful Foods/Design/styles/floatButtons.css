@@ -1,0 +1,30 @@
+.float-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000000;
+  }
+  
+  .float-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    background: linear-gradient(#12a7e2, #6cffb5);
+    margin-bottom: 10px;
+    transition: all 0.8s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .float-button:hover {
+    background: linear-gradient(#12a7e2, #532ed8);
+  }
+  
+  .float-button.home i{
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  

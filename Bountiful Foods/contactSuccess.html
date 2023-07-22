@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thanks page for new members of the Chamber"
+    />
+    <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/floatButtons.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/base.css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/medium.css"
+      media="screen and (min-width: 601px) and (max-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/large.css"
+      media="screen and (min-width: 1025px)"
+    />
+    <title>Bountiful Foods | Contact Success</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="headerInfo">
+        <div class="logoContainer">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="./images//Bountiful-notext.webp"
+                alt="Bountiful Foods Logo"
+            /></a>
+          </div>
+          <div class="titleContainer">
+            <div class="title primaryTitle">Bountiful Foods</div>
+            <div class="title">Sostenible Smoothies</div>
+          </div>
+        </div>
+
+        <nav>
+          <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="socialsHeader">
+          <a href="https://www.facebook.com/profile"
+            ><i class="fab fa-facebook-square" id="facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/profile"
+            ><i class="fab fa-linkedin" id="linkedIn"></i
+          ></a>
+          <a href="https://www.twitter.com/twitter"
+            ><i class="fab fa-twitter" id="twitter"></i
+          ></a>
+          <button class="hamburger" id="hamburgerChamber">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <h5 class="currentDatetime">
+        <span id="now"></span>
+      </h5>
+
+      <!-- Menu hamburguer modal -->
+      <div id="modal">
+        <ul class="toggleMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="divisorheader">
+      </div>
+      <div class="float-buttons home">
+        <a href="../index.html" class="float-button home">
+          <i class="fas fa-home"></i>
+        </a>
+      </div>
+
+      <div class="section-title" id="mainTitle">
+        <h1>Thanks for contact us <span id="joinedMember"></span>!</h1>
+        <h4>We will respond promptly to your inquiry.</h4>
+      </div>
+      <section class="form-section">
+        <div id="newMember"></div>
+      </section>
+      <div class="divisorFooter"></div>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footerLogoContainer">
+          <div id="footerLogoImg">
+            <a href="index.html"
+              ><img
+                id="logoFooter"
+                src="./images//Bountiful-notext.webp"
+                alt="Logo Photo"
+            /></a>
+          </div>
+          <div id="footerLogoInfo">
+            <p id="footerTitle">Bountiful Foods</p>
+            <p>10 Saint George</p>
+            <p>Carlsbad, California, US.</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <p>info@bountifulfoods.org</p>
+          <p>(+1) 224 857 965</p>
+          <a
+            href="https://www.google.com/maps/place/Carlsbad,+California,+EE.+UU./@33.1201178,-117.2816222,14z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?hl=es"
+            target="_blank"
+            ><i class="fas fa-thumbtack"></i> Location Map
+          </a>
+        </div>
+
+        <hr />
+        <div>
+          <div id="firstLineFooter">
+            <p>&copy;<span id="currentYear"></span> Bountiful Foods</p>
+            <p>
+              <a href="https://www.linkedin.com/in/eze-nicolidakis/"
+                >Ezequiel Nicolidakis</a
+              >
+            </p>
+            <p>WDD 230 Project</p>
+            <p id="secondLineFooter"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/contactFormValidation.js" defer></script>
+    <script src="./scripts/formResponseContact.js" defer></script>
+  </body>
+</html>
