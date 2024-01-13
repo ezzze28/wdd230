@@ -61,6 +61,14 @@ footer {
   border: solid 1px #003dcc;
   margin-bottom: 30px;
 }
+
+.card a{
+  color: #2dfe16;
+}
+
+.card a:hover{
+  color: aliceblue;
+}
 ul.lessons-list,
 ul.mainMenu {
   list-style-type: none;
