@@ -14,7 +14,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #003dcc;
+  background-color: #3d0064;
   padding: 18px;
 }
 
@@ -29,7 +29,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #003dcc;
+  background-color: #3d0064;
 }
 .mainMenu {
   padding: 0;
@@ -51,14 +51,14 @@ nav {
 }
 h3,
 footer {
-  background-color: #003dcc;
+  background-color: #3d0064;
   text-align: center;
   margin-top: 0;
   padding: 3px;
 }
 
 .card {
-  border: solid 1px #003dcc;
+  border: solid 1px 7209b7;
   margin-bottom: 30px;
 }
 
