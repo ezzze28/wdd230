@@ -11,7 +11,6 @@
     /* Ajusta la ruta según la ubicación de tus archivos */
       url("./horizon_outlined.woff") format("woff2"); /* Puedes añadir más formatos según sea necesario */
 }
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -24,13 +23,18 @@ body {
   background-color: var(--primary);
   color: var(--accent1);
 }
-
+header{
+  text-shadow: 1px 1px #ff00ff, -1px -1px #00ffff;
+}  
 header,
 footer {
+  width: 100%;
   text-align: center;
-  text-shadow: 1px 1px #ff00ff, -1px -1px #00ffff;
   font-family: "Horizon", sans-serif;
 }
+footer{
+  color: var(--accent2);
+}  
 h1{
   font-family: "Horizon", sans-serif;
 }
