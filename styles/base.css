@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
 body {
-  width: 100%;
-  max-width: 1600px;
   background-color: #0a0b09;
   color: #2dfe16;
   font-family: "Fira Code", monospace;
-  margin: 0 auto;
 }
-
+header, main, footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  padding: 1 rem;
+}
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: #3d0064;
-  padding: 18px;
 }
 
 #linkedin img {
@@ -31,12 +31,40 @@ nav {
   align-items: center;
   background-color: #3d0064;
 }
+iframe{
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: .25rem .75rem;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
 .mainMenu {
   padding: 0;
   text-align: center;
+  display: flex;
+	flex-direction: column;
+	list-style: none;
 }
 .mainMenu li {
   padding: 5px;
+  display: none;
 }
 .mainMenu li a {
   text-decoration: none;
@@ -44,6 +72,17 @@ nav {
 }
 .mainMenu li a:hover {
   color: aliceblue;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "📍 ";
 }
 #title {
   text-align: center;
@@ -54,11 +93,10 @@ footer {
   background-color: #3d0064;
   text-align: center;
   margin-top: 0;
-  padding: 3px;
 }
 
 .card {
-  border: solid 1px 7209b7;
+  border: solid 1px #3d0064;
   margin-bottom: 30px;
 }
 
@@ -74,6 +112,15 @@ ul.mainMenu {
   list-style-type: none;
 }
 
+#learning::before {
+  content: "🌐";
+  margin-right: 0.5em;
+}
+
+#info::before {
+  content: "ℹ️";
+  margin-right: 0.5em;
+}
 footer {
   border-radius: 0px 0px 5px 5px;
   padding-top: 1px;

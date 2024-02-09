@@ -17,6 +17,7 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
   </head>
   <body>
     <header>
@@ -30,6 +31,7 @@
       <h1 id="name">Ezequiel Nicolidakis</h1>
     </header>
     <nav>
+      <button id="menu"></button>
       <ul class="mainMenu">
         <li><a href="#">Home</a></li>
         <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
@@ -46,9 +48,13 @@
     <main>
       <h2 id="title">WDD 230: Web Frontend Development</h2>
       <section class="card">
-        <h3>Learning Activities</h3>
+        <h3 id="learning">Learning Activities</h3>
         <ul class="lessons-list">
-          <li class="lessonx">01: <a href="lesson01/holygrail.html">Holy Layout</a> <p style="display: inline;"> I </p> <a href="https://codepen.io/ezzze28/pen/yLwVvgK"> JS Pen</a></li>
+          <li class="lessonx">
+            01: <a href="lesson01/holygrail.html">Holy Layout</a>
+            <p style="display: inline">I</p>
+            <a href="https://codepen.io/ezzze28/pen/yLwVvgK"> JS Pen</a>
+          </li>
           <li class="lessonx">02: <a href="lesson02/">Design Principles</a></li>
           <li class="lessonx">03: <a href="loading.html"></a></li>
           <li class="lessonx">04: <a href="loading.html"></a></li>
@@ -61,8 +67,17 @@
         </ul>
       </section>
       <section class="card">
-        <h3>Information</h3>
+        <h3 id="info">Information</h3>
       </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.01815552092!2d-56.25684381724497!3d-34.796477708536514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d36145d90293%3A0xe8b7e19718a1d2bb!2sCol%C3%B3n%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1707305021406!5m2!1ses-419!2suy"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
     <footer>
       <div class="footer_cont">
@@ -74,5 +89,6 @@
       </div>
     </footer>
     <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/ham_menu.js"></script>
   </body>
 </html>
