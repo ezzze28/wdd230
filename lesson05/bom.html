@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 Lesson 5, Book of Mormon chapter marker page."
+    />
+    <meta property="og:title" content="Book of Mormon chapter marker" />
+    <meta property="og:type" content="Profile" />
+    <meta property="og:url" content="https://ezzze28.github.io/wdd230/" />
+    <meta property="og:image" content="./images/text.png" />
+    <meta name="twitter:title" content="Book of Mormon chapter marker" />
+    <meta
+      name="twitter:description"
+      content=" Book Of Mormon Marker page! Free to use on your daily gospel studies."
+    />
+    <meta name="twitter:image" content=" ./images/text.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>BoM</title>
+  </head>
+  <body>
+    <main>
+      <h1><i class="fas fa-book"></i> Book of Mormon - Top 25</h1>
+
+      <div class="content">
+        <input
+          type="text"
+          name="item"
+          id="item"
+          placeholder="Enter Book and Chapter.."
+        />
+        <button id="addChapterBtn">Add Chapter</button>
+      </div>
+
+      <ul id="chaptersContainer"></ul>
+    </main>
+
+    <footer>
+      <div>
+        <p id="firstLineFooter"></p>
+        <h3>
+          &copy; <span id="currentYear"></span> - Ezequiel Nicolidakis -
+          Montevideo, 🇺🇾
+        </h3>
+        <p>Last Updated: <span id="last_modified"></span> (GMT-3)</p>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
