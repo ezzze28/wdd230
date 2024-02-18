@@ -1,0 +1,32 @@
+:root {
+    --primary: #2B2Df5;
+    --secondary: #0081C9;
+    --accent1: #edf126;
+    --accent2: #120b0e;
+  }
+@media screen and (min-width: 800px){
+    #menu {
+		display: none; 
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+    nav{
+        width: 100%;
+    }
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+    footer{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        margin: 5px;
+    }
+}

@@ -1,0 +1,12 @@
+:root {
+    --primary: #2B2Df5;
+    --secondary: #0081C9;
+    --accent1: #edf126;
+    --accent2: #120b0e;
+  }
+@media screen and (min-width: 600px) {
+    body{
+        background-color: black;
+    }
+    
+}

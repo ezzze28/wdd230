@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ezzze28@github" />
+    <meta
+      name="description"
+      content="Discover the Atlantis City Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+    />
+    <meta property="og:title" content="Atlantis City Chamber of Commerce" />
+    <meta property="og:type" content="Profile" />
+    <meta
+      property="og:url"
+      content="https://ezzze28.github.io/wdd230/chamber"
+    />
+    <meta property="og:image" content="./images/meta_card.webp" />
+    <meta
+      name="twitter:title"
+      content="Home - Atlantis City Chamber of Commerce"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the Atlantis City Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+    />
+    <meta name="twitter:image" content=" ./images/meta_card.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home - Atlantis City Chamber of Commerce</title>
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          id="logo_img"
+          src="images/logo.svg"
+          alt="Atlantis City Chamber Of Commerce Logo"
+      /></a>
+      <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="../loading.html">Discover</a></li>
+          <li><a href="../loading.html">Directory</a></li>
+          <li><a href="../loading.html">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <img
+          id="hero_img"
+          src="images/hero_img.webp"
+          alt="Atlantis City Eagle"
+        />
+        <h1>Welcome to the Atlantis City Chamber of Commerce</h1>
+      </section>
+      <section id="join">
+        <h2>Join the Chamber</h2>
+        <p>
+          Join the Atlantis City Chamber of Commerce today and become part of a
+          vibrant community dedicated to fostering business growth and success.
+          By joining our chamber, you gain access to valuable resources,
+          networking opportunities, and support from fellow business
+          professionals. Whether you're a small startup or an established
+          enterprise, our chamber is here to help you thrive. Join us now and
+          take your business to new heights!
+        </p>
+        <button id="join_button"><a href="../loading.html"></a></button>
+      </section>
+      <section id="info">
+        <section class="info_cards"></section>
+        <section class="info_cards"></section>
+      </section>
+      <section id="ads"></section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Atlantis City Chamber of Commerce
+      </p>
+      <p>Phone: 4372 7272</p>
+      <p>Email: chamber@atlantiscity.com</p>
+      <p>Last modified: <span id="last_modified"></span></p>
+    </footer>
+    <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/ham_menu.js"></script>
+  </body>
+</html>
