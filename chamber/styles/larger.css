@@ -20,6 +20,26 @@
 		display: block;
 		flex: 1 1 100%;
 	}
+    #action{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100%;
+    }
+    #action_bck{
+        grid-column: 2/5;
+        z-index: 0;
+    }
+    .join{
+        grid-column: 3/5;
+        z-index: 2;
+        width: 800px;
+    }
+    #info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     footer{
         margin-top: 15px;
         display: flex;
