@@ -31,10 +31,43 @@ nav {
   align-items: center;
   background-color: #3d0064;
 }
+.hero {
+  margin: 0px auto;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, .1);
+  width: 100%;
+  height: auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.herolabel {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background: black;
+  border: 1px solid rgba(0, 0, 0, .75);
+  padding: 1rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+}
+
+.herolabel p {
+  margin: 0;
+  padding: .25rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
 iframe{
   max-width: 90%;
   display: block;
   margin: 0 auto;
+  height: "450";
+  border: 0
 }
 #menu {
 	font-size: 1.5rem;
@@ -106,6 +139,9 @@ footer {
 
 .card a:hover{
   color: aliceblue;
+}
+.card p{
+  margin-left: 35px;
 }
 ul.lessons-list,
 ul.mainMenu {

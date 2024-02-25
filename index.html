@@ -16,7 +16,7 @@
     />
     <meta property="og:type" content="Profile" />
     <meta property="og:url" content="https://ezzze28.github.io/wdd230/" />
-    <meta property="og:image" content="./images/text.png" />
+    <meta property="og:image" content="./images/text.webp" />
     <meta name="twitter:title" content="Ezequiel Nicolidakis - WDD 230 - Web Frontend Development" />
     <meta
       name="twitter:description"
@@ -25,11 +25,11 @@
     />
     <meta
       name="twitter:image"
-      content=" ./images/text.png"
+      content=" ./images/text.webp"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <title>Ezequiel Nicolidakis - WDD 230 - Web Frontend Development</title>
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="icon" type="image/webp" href="./images/favicon.webp" />
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -44,7 +44,7 @@
         href="https://www.linkedin.com/in/eze-nicolidakis/"
         target="_blank"
       >
-        <img src="./images/me.jpg" alt="Me" />
+        <img src="./images/me.webp" alt="Me" />
       </a>
       <h1 id="name">Ezequiel Nicolidakis</h1>
     </header>
@@ -64,6 +64,16 @@
       </ul>
     </nav>
     <main>
+      <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(min-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
+            <img src="images/hero-large.webp" loading="lazy" width="500" height="250" alt="hero photo">
+        </picture>
+        <div class="herolabel">
+            <p>Mexico City Temple</p>
+        </div>
+    </div>
       <h2 id="title">WDD 230: Web Frontend Development</h2>
       <section class="card">
         <h3 id="learning">Learning Activities</h3>
@@ -86,12 +96,10 @@
       </section>
       <section class="card">
         <h3 id="info">Information </h3>
+        <p> Page Visits: <span id="visits">20</span></p>
       </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.01815552092!2d-56.25684381724497!3d-34.796477708536514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d36145d90293%3A0xe8b7e19718a1d2bb!2sCol%C3%B3n%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1707305021406!5m2!1ses-419!2suy"
-        width="600"
-        height="450"
-        style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
@@ -108,5 +116,6 @@
     </footer>
     <script src="./scripts/getdates.js"></script>
     <script src="./scripts/ham_menu.js"></script>
+    <script src="./scripts/counter.js"></script>
   </body>
 </html>
