@@ -1,0 +1,60 @@
+:root {
+  --color: #2dfe16;
+  --border: #2dfe16;
+  --border-bottom: #2dfe16;
+  --label: #2dfe16;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 1rem;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  padding: 0 2%;
+  min-height: 20rem;
+  margin: 0 auto;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.75rem;
+  border-bottom: 1px solid #2dfe16;
+}
+
+input[type="text"],
+input[type="range"],
+input[type="radio"] {
+  margin: 1rem;
+  padding: 0.5em;
+}
+
+input[type="submit"] {
+  width: auto;
+  align-self: flex-start;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: var(--color);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label {
+  display: block;
+  padding-top: 1rem;
+  color: #2dfe16;
+  font-size: 0.8rem;
+}

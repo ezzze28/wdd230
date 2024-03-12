@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ezzze28@github" />
@@ -17,16 +17,16 @@
     <meta property="og:type" content="Profile" />
     <meta property="og:url" content="https://ezzze28.github.io/wdd230/" />
     <meta property="og:image" content="./images/text.webp" />
-    <meta name="twitter:title" content="Ezequiel Nicolidakis - WDD 230 - Web Frontend Development" />
+    <meta
+      name="twitter:title"
+      content="Ezequiel Nicolidakis - WDD 230 - Web Frontend Development"
+    />
     <meta
       name="twitter:description"
       content=" Course assignment portal of Ezequiel Nicolidakis in WDD 230 - Web
       Frontend Development at Brigham Young University - Idaho"
     />
-    <meta
-      name="twitter:image"
-      content=" ./images/text.webp"
-    />
+    <meta name="twitter:image" content=" ./images/text.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <title>Ezequiel Nicolidakis - WDD 230 - Web Frontend Development</title>
     <link rel="icon" type="image/webp" href="./images/favicon.webp" />
@@ -34,6 +34,7 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/large.css" />
   </head>
@@ -65,46 +66,71 @@
       </ul>
     </nav>
     <main>
-      <div class="hero">
-        <picture>
-            <source srcset="images/hero-small.webp" media="(min-width: 500px)">
-            <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
-            <img src="images/hero-large.webp" loading="lazy" width="500" height="250" alt="hero photo">
-        </picture>
-        <div class="herolabel">
-            <p>Mexico City Temple</p>
-        </div>
-    </div>
-      <h2 id="title">WDD 230: Web Frontend Development</h2>
-      <section class="card">
-        <h3 id="learning">Learning Activities</h3>
-        <ul class="lessons-list">
-          <li class="lessonx">
-            01: <a href="lesson01/holygrail.html">Holy Layout</a>
-            <p style="display: inline">I</p>
-            <a href="https://codepen.io/ezzze28/pen/yLwVvgK"> JS Pen</a>
-          </li>
-          <li class="lessonx">02: <a href="lesson02/">Design Principles</a></li>
-          <li class="lessonx">03: <a href="loading.html"></a></li>
-          <li class="lessonx">04: <a href="loading.html"></a></li>
-          <li class="lessonx">05: <a href="lesson05/bom.html"></a>DOM Manipulation</li>
-          <li class="lessonx">07: <a href="loading.html"></a></li>
-          <li class="lessonx">07: <a href="loading.html"></a></li>
-          <li class="lessonx">08: <a href="loading.html"></a></li>
-          <li class="lessonx">09: <a href="loading.html"></a></li>
-          <li class="lessonx">10: <a href="loading.html"></a></li>
-        </ul>
-      </section>
-      <section class="card">
-        <h3 id="info">Information </h3>
-        <p> Page Visits: <span id="visits">20</span></p>
-      </section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.01815552092!2d-56.25684381724497!3d-34.796477708536514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d36145d90293%3A0xe8b7e19718a1d2bb!2sCol%C3%B3n%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1707305021406!5m2!1ses-419!2suy"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <h1>Submit your form</h1>
+      <form method="get" action="record.html">
+        <fieldset>
+          <legend>Username</legend>
+          <label for="username">Username* :</label>
+          <input type="text" id="username" name="username" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Password</legend>
+          <label for="password">Password* :</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            pattern="[a-zA-Z0-9]{8,}"
+            title="Password must be at least 8 characters and alphanumeric"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirm Password</legend>
+          <label for="confirmPassword">Confirm Password :</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Email</legend>
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+            title="Please enter a valid email address"
+          />
+          <span id="emailError" class="error"></span>
+        </fieldset>
+
+        <fieldset>
+          <legend>Rating</legend>
+          <label for="pageRating">Page Rating :</label>
+          <input
+            type="range"
+            id="pageRating"
+            name="pageRating"
+            min="1"
+            max="10"
+            step="1"
+            oninput="updateRatingValue()"
+          />
+          <span id="ratingValue">1</span>
+        </fieldset>
+
+        <fieldset>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
     </main>
     <footer>
       <div class="footer_cont">
@@ -117,6 +143,6 @@
     </footer>
     <script src="./scripts/getdates.js"></script>
     <script src="./scripts/ham_menu.js"></script>
-    <script src="./scripts/counter.js"></script>
+    <script src="scripts/form.js"></script>
   </body>
 </html>
