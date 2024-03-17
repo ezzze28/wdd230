@@ -4,11 +4,12 @@ body {
   background-color: #0a0b09;
   color: #2dfe16;
   font-family: "Fira Code", monospace;
+  height: 100%;
 }
 header, main, footer {
   max-width: 640px;
   margin: 1rem auto;
-  padding: 1 rem;
+  padding: 1rem;
 }
 header {
   display: flex;
@@ -66,8 +67,8 @@ iframe{
   max-width: 90%;
   display: block;
   margin: 0 auto;
-  height: "450";
-  border: 0
+  height: 450px;
+  border: 0px;
 }
 #menu {
 	font-size: 1.5rem;

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ezzze28@github" />
+    <meta
+      name="description"
+      content="Join to the Atlantis City Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+    />
+    <meta property="og:title" content="Atlantis City Chamber of Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:url"
+      content="https://ezzze28.github.io/wdd230/chamber"
+    />
+    <meta property="og:image" content="./images/meta_card.webp" />
+    <meta
+      name="twitter:title"
+      content="Home - Atlantis City Chamber of Commerce"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the Atlantis City Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+    />
+    <meta name="twitter:image" content=" ./images/meta_card.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home - Atlantis City Chamber of Commerce</title>
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          id="logo_img"
+          src="images/logo.svg"
+          alt="Atlantis City Chamber Of Commerce Logo"
+      /></a>
+      <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="../loading.html">Directory</a></li>
+          <li><a href="join.html">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="banner" class="hidden">
+        Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </div>
+      <div class="section-title" id="mainTitle">
+        <h1>Join Horizon Chamber</h1>
+      </div>
+      <section class="form-section">
+        <form action="thankyou.html" method="post">
+          <label for="firstName"
+            >First Name <span class="asterisk">*</span></label
+          >
+          <input type="text" name="firstName" id="firstName" required />
+
+          <label for="lastName"
+            >Last Name <span class="asterisk">*</span></label
+          >
+          <input type="text" name="lastName" id="lastName" required />
+
+          <label for="positionTitle"
+            >Business Position Title
+            <span class="optionalInput">(optional)</span></label
+          >
+          <input
+            type="text"
+            name="positionTitle"
+            id="positionTitle"
+            title="Please enter a valid business position title (minimum 7 characters with only letters, hyphens, and spaces)."
+          />
+          <p id="validationMessage"></p>
+          <label for="email">Email <span class="asterisk">*</span></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@example.com"
+            required
+          />
+          <label for="phone">Phone <span class="asterisk">*</span></label>
+          <input type="tel" name="phone" id="phone" required />
+          <label for="business"
+            >Business Name <span class="asterisk">*</span></label
+          >
+          <input type="tel" name="business" id="business" required />
+          <label for="membershipLevel">Membership</label>
+          <select name="membershipLevel" id="membershipLevel">
+            <option value="" selected disabled>Select Membership Level</option>
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+          </select>
+          <label for="comments"
+            >Aditional comments
+            <span class="optionalInput">(optional)</span></label
+          >
+          <textarea name="comments" id="comments"></textarea>
+          <!-- Hidden field for current date and time -->
+          <input
+            type="hidden"
+            name="formLoadedDateTime"
+            id="formLoadedDateTime"
+          />
+          <p id="validationMessageSubmit"></p>
+          <input
+            id="submitBtn"
+            type="submit"
+            value="Join to Chamber"
+            disabled
+          />
+        </form>
+
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Atlantis City Chamber of Commerce
+      </p>
+      <p>Phone: 4372 7272</p>
+      <p>Email: chamber@atlantiscity.com</p>
+      <p>Last modified: <span id="last_modified"></span></p>
+    </footer>
+    <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/ham_menu.js"></script>
+    <script src="./scripts/form_validation.js"></script>
+  </body>
+</html>
