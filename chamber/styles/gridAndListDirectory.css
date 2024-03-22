@@ -1,0 +1,164 @@
+:root{
+	--primary: #2b2df5;
+	--secondary: #0081c9;
+	--accent1: #edf126;
+	--accent2: #120b0e;
+  }
+
+@font-face {
+	font-family: "Horizon";
+	src: url("./horizon.woff") format("woff"),
+	  url("./horizon_outlined.woff") format("woff2");
+  }
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background: transparent;
+	max-width: 100%;
+}
+
+/* Grid */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+	padding: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.grid section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 1rem;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+	height: auto;
+	width: 150px;
+	max-width: 100%;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h2 {
+	font-family: 'Horizon', serif;
+	-webkit-text-fill-color: var(--accent2);
+}
+
+.grid a,
+.list a {
+	margin-top: 10px;
+	font-size: 13px;
+	letter-spacing: 0px;
+	text-decoration: none;
+	transition: all 0.3s;
+	color: var(--accent2);
+}
+
+.grid a:hover,
+.list a:hover {
+	color: var(--accent1);
+	letter-spacing: 0.3px;
+}
+
+.grid p {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.grid .membership-level {
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.grid .aditional-info {
+	padding: 5px 10px;
+}
+
+/* List */
+.list hr{
+	display: none;
+}
+section h2
+ {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 0.85rem;
+	letter-spacing: 1.1pt;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	width: 98%;
+	padding: 10px 0;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* Solo para pantallas más pequeñas */
+}
+
+.list section h2 {
+	font-size: 1rem;
+	font-family: 'Horizon', sans-serif;
+	-webkit-text-fill-color: var(--accent2);
+}
+
+.list section:nth-child(even) {
+	background: transparent;
+  }
+  
+  .list section:nth-child(odd) {
+	background: transparent;
+  }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+	section p,
+	section a,
+	.list section h3 {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section h3,
+	.list section h3 {
+		font-size: 14px;
+	}
+}

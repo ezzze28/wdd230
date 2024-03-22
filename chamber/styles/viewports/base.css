@@ -1,0 +1,288 @@
+:root{
+  --primary: #2b2df5;
+  --secondary: #0081c9;
+  --accent1: #edf126;
+  --accent2: #120b0e;
+  --sunset: #ffd194;
+}
+
+/* Header */
+
+.headerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.headerInfo .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  position: absolute;
+  order: 2;
+  left: 20px;
+  top: 40px;
+  
+}
+.titleContainer{
+  position: absolute;
+  order: 2;
+  left: 120px;
+  top: 25px;
+
+}
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.title {
+  font-size: 12px;
+}
+.primaryTitle {
+  font-size: 18px;
+}
+
+.hamburger {
+  display: block;
+  order: 1;
+  position: absolute;
+  right: 20px;
+}
+.mainMenu {
+  display: none;
+}
+.toggleMenu {
+  max-width: 100%;
+  width: 100%;
+  height: 250px;
+  flex-grow: 0;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  background: rgba(0, 129, 201, 1);
+  margin: 0 auto;
+  padding: 20px 20px;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  border-top: 1.5px solid var(--accent1);
+  margin-bottom: -30px;
+  display: none;
+  flex-direction: column;
+}
+
+.toggleMenu li {
+  display: block;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
+.toggleMenu li a {
+  text-decoration: none;
+  color: var(--accent2);
+  font-family: "Horizon";
+}
+
+.toggleMenu li a:hover {
+  color: #ce7420;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggleMenu.active {
+  display: block;
+}
+
+.socialsHeader i {
+  margin-right: -5px;
+  margin-left: 1px;
+}
+
+.socialsHeader a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--accent2);
+}
+
+.socialsHeader a:hover {
+  color: #ce7420;
+}
+#facebook {
+  position: absolute;
+  order: 2;
+  right: 90px;
+  width: 0;
+}
+#linkedIn{
+  position: absolute;
+  order: 2;
+  right: 65px;
+  width: 0;
+}
+
+/* Main */
+
+#hero-img {
+  margin-top: 0;
+  opacity: 85%;
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+}
+/* Image for week 6 */
+#hero, .discoverPicture {
+  width: 100%;
+}
+
+#hero picture, .discoverPicture picture {
+  height: 100%;
+  opacity: 85%;
+  object-fit: cover;
+}
+/* Image for week 6 */
+
+#hero .gridAreatitle, .discoverPicture .gridAreatitle {
+  top: 70%;
+  left: 50%;
+}
+#hero .gridAreaContent button, .discoverPicture .gridAreaContent button {
+  top: 90%;
+  left: 50%;
+}
+.spotlightsSlogan,
+.spotlights .gridAreaContent p {
+  font-size: 15px;
+}
+/* Main discover*/
+.section-title{
+  margin-bottom: 30px;
+  padding-top: 30px;
+  font-size: 40px;
+}
+#mainTitle h1 {
+  font-size: 40px;
+}
+canvas {
+  max-width: 90%;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+#chart-container{
+  max-width: 90%;
+  height:300px;
+}
+#totalVisitorsContainer {
+  display: none;
+  position: fixed;
+  width: 50%;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  z-index: 2;
+  padding: 20px 15px;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 12px;
+  border: solid 1px var(--accent2);
+  font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 5px var(--accent1);
+  overflow: hidden;
+  text-align: center;
+}
+#totalVisitorsContainer.active ~ #viewsButton{
+  display: block;
+}
+#totalVisitorsContainer p{
+  margin-top: -30px;
+  font-size: 22px;
+}
+#totalVisitorsContainer button{
+  font-size: 22px;
+}
+/* Main discover end*/
+
+/* Main Join */
+
+#submitBtn{
+  font-size: 10px;
+}
+
+/* Main Join end */
+
+/* Footer */
+footer {
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+}
+
+.footerContainer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footerLogoContainer,
+.footerContactInfoContainer {
+  margin: 0;
+  margin-bottom: 20px;
+  flex-direction: column;
+  flex-basis: 100%;
+  font-size: 18px;
+  width: 100%;
+}
+
+#logoFooter {
+  width: 380px;
+  margin-top: 0px ;
+  margin-left: -70px;
+  padding-bottom: 70px;
+}
+#footerLogoInfo {
+  font-size: 18px;
+}
+#footerTitle {
+  font-size: 20px;
+}
+
+.contacts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.contacts p {
+  padding: 5px;
+  margin: 3px;
+}
+#footerLogoInfo p {
+  margin: 2px;
+}
+
+#firstLineFooter,
+#secondLineFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#firstLineFooter p,
+#secondLineFooter p {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+/* Not show the "|" between the lines */
+#firstLineFooter p:not(:last-child)::after {
+  display: none;
+}

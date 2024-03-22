@@ -2,22 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Ezzze28@github" />
     <meta
       name="description"
-      content="Discover the Atlantis City Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+      content="Explore the captivating beauty of Atlantis City through a stunning collection of captivating images."
     />
+    <meta name="author" content="Ezzze28@github" />
     <meta property="og:title" content="Atlantis City Chamber of Commerce" />
-    <meta property="og:type" content="Profile" />
+    <meta property="og:type" content="Website" />
     <meta
       property="og:url"
       content="https://ezzze28.github.io/wdd230/chamber"
     />
-    <meta property="og:image" content="./images/meta_card.webp" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/ezzze28/wdd230/main/chamber/images/meta_card.webp" />
     <meta
       name="twitter:title"
-      content="Home - Atlantis City Chamber of Commerce"
+      content="Discover - Atlantis City Chamber of Commerce"
     />
     <meta
       name="twitter:description"
@@ -25,67 +26,298 @@
     />
     <meta name="twitter:image" content=" ./images/meta_card.webp" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Home - Atlantis City Chamber of Commerce</title>
-    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
     <link
       rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+    <link href="./images/logo.svg" rel="shortcut icon" type="png/icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/lazyload.css" />
+    <link rel="stylesheet" href="./styles/floatButtons.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/base.css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/medium.css"
+      media="screen and (min-width: 601px) and (max-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/large.css"
+      media="screen and (min-width: 1025px)"
+    />
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <title>Atlantis City Chamber | Discover</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img
-          id="logo_img"
-          src="images/logo.svg"
-          alt="Atlantis City Chamber Of Commerce Logo"
-      /></a>
-      <nav>
-        <button id="menu"></button>
-        <ul class="navigation">
+      <div class="headerInfo">
+        <div class="logoContainer">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./images/logo.svg" alt="Altantis City Chamber Logo"
+            /></a>
+          </div>
+        </div>
+
+        <nav>
+          <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="form.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="socialsHeader">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-square" id="facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/"
+            ><i class="fab fa-linkedin" id="linkedIn"></i
+          ></a>
+          <button class="hamburger" id="hamburgerChamber">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <h5 class="currentDatetime">
+        <span id="now"></span>
+      </h5>
+
+      <!-- Menu hamburguer modal -->
+      <div id="modal">
+        <ul class="toggleMenu">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="../loading.html">Directory</a></li>
-          <li><a href="join.html">Form</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="form.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
-    <main>
-      <img src="images/hero_img.webp" alt="">
-      <h1>Discover Atlantis City</h1>
-      <p>
-        Located along Uruguay's captivating coastline in Canelones, offers a
-        blend of coastal charm and urban convenience. Just a short drive from
-        Montevideo, this vibrant city welcomes visitors with its scenic beauty
-        and rich cultural heritage.
-      </p>
-      
-      <section class="info">
-        <h2>Beach Life</h2>
-        <h2>Cultural Delights</h2>
-        <h2>Natural Wonders</h2>
-        <h2>Community Vibe</h2>
+
+    <main id="main-discover">
+      <div id="banner" class="hidden">
+        Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </div>
+      <div class="float-buttons views">
+        <button class="float-button views" id="viewsButton">
+          <i class="fas fa-eye-slash"></i>
+        </button>
+      </div>
+      <div id="totalVisitorsContainer">
+        <p class="section-title">Visitors:</p>
+        <span class="button" id="totalVisitors">Loading..</span>
+      </div>
+      <div class="section-title" id="mainTitle">
+        <h1>Discover Atlantis City</h1>
+      </div>
+
+      <section id="chart-stadistics" class="section-title">
+        <h2>Statistic</h2>
+        <div>
+          <button class="chart" id="texasBtn">Atlantis City Statistic</button>
+          <button class="chart active" id="guildBtn">Atlantis City Chamber's Members</button>
+        </div>
+        <ul>
+          <li id="chart-container">
+            <canvas id="myChart"></canvas>
+            <canvas id="myChart2"></canvas>
+          </li>
+        </ul>
       </section>
-      <section class="images"></section>
+      <h2 class="section-title">Favorites places for our tourists</h2>
+      <div class="grid-container">
+        <div class="gridArea1Discover discoverPicture">
+          <picture id="discoverPicture1">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/beach.webp"
+              alt="Big Bend National Park"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Discover South Beach</h2>
+            <p>
+              Discover the world-famous South Beach, known for its stunning
+              beaches, iconic Art Deco architecture, and vibrant nightlife.
+              Explore the best of Miami's entertainment and relaxation hub.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea2Discover discoverPicture">
+          <picture id="discoverPicture2">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/district.webp"
+              alt="Justice Palace"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Art Deco Historic District</h2>
+            <p>
+              Immerse yourself in the charm of Miami's Art Deco Historic
+              District, featuring beautifully preserved pastel-colored buildings
+              that transport you back in time.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea3Discover discoverPicture">
+          <picture id="discoverPicture3">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/museum.webp"
+              alt="Galveston Island"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Vizcaya Museum and Gardens</h2>
+            <p>
+              Experience the opulence of Vizcaya, a grand Italian
+              Renaissance-style villa surrounded by lush gardens, showcasing the
+              city's rich cultural heritage.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea4Discover discoverPicture">
+          <picture id="discoverPicture4">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/walls.webp"
+              alt="Linda Moon Canyon"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Wynwood Walls</h2>
+            <p>
+              The Wynwood Walls are an outdoor art gallery that showcases an
+              ever-changing collection of colorful and innovative street art.
+              It's a vibrant hub for contemporary urban art and a must-visit for
+              art enthusiasts.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea5Discover discoverPicture">
+          <picture id="discoverPicture5">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/havana.webp"
+              alt="The Captain"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Little Havana</h2>
+            <p>
+              Immerse yourself in Cuban culture and traditions at Little Havana,
+              where you can savor delicious Cuban cuisine, listen to live Latin
+              music, and watch skilled salsa dancers perform in the streets.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea6Discover discoverPicture">
+          <picture id="discoverPicture6">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/park.webp"
+              alt="Sonora Caves"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Everglades National Park</h2>
+            <p>
+              Just a short drive from Miami, the Everglades National Park is a
+              vast and unique ecosystem known for its swamplands, wildlife, and
+              airboat tours. It's a perfect destination for nature lovers and
+              outdoor enthusiasts.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-      <p>
-        &copy; <span id="currentYear"></span> Atlantis City Chamber of Commerce
-      </p>
-      <p>Phone: 4372 7272</p>
-      <p>Email: chamber@atlantiscity.com</p>
-      <p>Last modified: <span id="last_modified"></span></p>
+      <div class="footerContainer">
+        <div class="footerLogoContainer">
+          <div id="footerLogoImg">
+            <a href="index.html"
+              ><img
+                id="logoFooter"
+                src="./images/logo.svg"
+                alt="Logo Photo"
+            /></a>
+          </div>
+          <div id="footerLogoInfo">
+            <p id="footerTitle">Atlantis City : Business Paradise</p>
+            <p>Roger Balet, C1 66</p>
+            <p>Atlantida, Canelones Department</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <p>info@atlantischamber.org</p>
+          <p>(+1) 230 228 827</p>
+          <a href="https://maps.app.goo.gl/YKKK3Bu9g6rk7s7G6" target="_blank"><i class="fas fa-thumbtack"></i> Location Map </a>
+        </div>
+        <hr />
+        <div>
+          <div id="firstLineFooter">
+            <p>&copy;<span id="currentYear"></span> Atlantis City Chamber</p>
+            <p>
+              <a href="https://www.linkedin.com/in/eze-nicolidakis/"
+                >Ezequiel Nicolidakis</a>
+            </p>
+            <p>WDD 230 Project</p>
+            <p id="secondLineFooter"></p>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="./scripts/getdates.js"></script>
-    <script src="./scripts/ham_menu.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+      defer
+    ></script>
+    <script src="./scripts/pageViews.js" defer></script>
+    <script src="./scripts/chart.js" defer></script>
+    <script src="./scripts/lazyload.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>

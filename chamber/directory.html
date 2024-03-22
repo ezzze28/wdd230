@@ -6,18 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Thanks page for new members of the Chamber"
+      content="Explore the directory of business that trust in Atlantis City Chamber of Commerce."
     />
-    <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
+    <meta name="author" content="Ezzze28@github" />
+    <meta property="og:title" content="Atlantis City Chamber of Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:url"
+      content="https://ezzze28.github.io/wdd230/chamber"
+    />
+    <meta property="og:image" content="https://raw.githubusercontent.com/ezzze28/wdd230/main/chamber/images/meta_card.webp" />
+    <meta
+      name="twitter:title"
+      content="Directory - Atlantis City Chamber of Commerce"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the Atlantis City Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+    />
+    <meta name="twitter:image" content=" ./images/meta_card.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link href="./images/logo.svg" rel="shortcut icon" type="png/icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/lazyload.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/gridAndListDirectory.css" />
     <link
       rel="stylesheet"
       href="./styles/viewports/base.css"
@@ -33,20 +58,19 @@
       href="./styles/viewports/large.css"
       media="screen and (min-width: 1025px)"
     />
-    <title>Atlantis City Chamber | Thanks</title>
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <title>Atlantis City Chamber | Directory</title>
   </head>
-
   <body>
     <header>
       <div class="headerInfo">
         <div class="logoContainer">
           <div class="logo">
             <a href="index.html"
-              ><img src="./images/logo.svg" alt="Atlantis City Chamber Logo"
+              ><img src="./images/logo.svg" alt="Atlantis City Logo"
             /></a>
           </div>
         </div>
-
         <nav>
           <ul class="mainMenu">
             <li><a href="index.html">Home</a></li>
@@ -56,12 +80,11 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-
         <div class="socialsHeader">
-          <a href="https://www.facebook.com/"
+          <a href="https://www.facebook.com/profile"
             ><i class="fab fa-facebook-square" id="facebook"></i
           ></a>
-          <a href="https://www.linkedin.com/"
+          <a href="https://www.linkedin.com/in/profile"
             ><i class="fab fa-linkedin" id="linkedIn"></i
           ></a>
           <button class="hamburger" id="hamburgerChamber">
@@ -84,16 +107,21 @@
         </ul>
       </div>
     </header>
+
     <main>
       <div id="banner" class="hidden">
-        Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
-      <div class="section-title" id="mainTitle">
-        <h1>Thanks for Joining   us <span id="joinedMember"></span>!</h1>
+      
+      <div class="menu">
+        <h2 class="section-title">
+          Directory of Registered Businesses in Our Chamber
+        </h2>
+        <button id="grid" class="active"><i class="fas fa-th"></i></button>
+        <button id="list"><i class="fas fa-list-alt"></i></button>
       </div>
-      <section class="form-section">
-        <div id="newMember"></div>
-      </section>
+
+      <div class="grid" id="dataContainer"></div>
     </main>
     <footer>
       <div class="footerContainer">
@@ -131,8 +159,9 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/lazyload.js" defer></script>
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/formResponse.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
   </body>
 </html>

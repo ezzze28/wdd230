@@ -8,10 +8,28 @@
       name="description"
       content="Thanks page for new members of the Chamber"
     />
-    <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
+    <meta name="author" content="Ezzze28@github" />
+    <meta property="og:title" content="Atlantis City Chamber of Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:url"
+      content="https://ezzze28.github.io/wdd230/chamber"
+    />
+    <meta property="og:image" content="https://raw.githubusercontent.com/ezzze28/wdd230/main/chamber/images/meta_card.webp" />
+    <meta
+      name="twitter:title"
+      content="Contact - Atlantis City Chamber of Commerce"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the Atlantis City Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+    />
+    <meta name="twitter:image" content=" ./images/meta_card.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link href="./images/logo.svg" rel="shortcut icon" type="png/icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -33,9 +51,8 @@
       href="./styles/viewports/large.css"
       media="screen and (min-width: 1025px)"
     />
-    <title>Atlantis City Chamber | Thanks</title>
+    <title>Atlantis Chamber | Contact Success</title>
   </head>
-
   <body>
     <header>
       <div class="headerInfo">
@@ -46,7 +63,6 @@
             /></a>
           </div>
         </div>
-
         <nav>
           <ul class="mainMenu">
             <li><a href="index.html">Home</a></li>
@@ -56,7 +72,6 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-
         <div class="socialsHeader">
           <a href="https://www.facebook.com/"
             ><i class="fab fa-facebook-square" id="facebook"></i
@@ -72,7 +87,6 @@
       <h5 class="currentDatetime">
         <span id="now"></span>
       </h5>
-
       <!-- Menu hamburguer modal -->
       <div id="modal">
         <ul class="toggleMenu">
@@ -89,7 +103,8 @@
         Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
       <div class="section-title" id="mainTitle">
-        <h1>Thanks for Joining   us <span id="joinedMember"></span>!</h1>
+        <h1>Thank you for contacting Atlantis City Chamber of Commerce, <span id="joinedMember"></span>!</h1>
+        <h6>We'll be in touch soon.</h6>
       </div>
       <section class="form-section">
         <div id="newMember"></div>
@@ -133,6 +148,6 @@
     </footer>
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/formResponse.js" defer></script>
+    <script src="./scripts/formResponseContact.js" defer></script>
   </body>
 </html>

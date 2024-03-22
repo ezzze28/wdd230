@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore the dynamic business landscape of Atlantis City with the Atlantis City Chamber of Commerce. Discover unparalleled opportunities, vibrant community engagement, and strategic resources to propel your business forward. Join us in fostering economic growth and innovation in one of Uruguay's most picturesque coastal destinations."
+      content="Unlock endless business opportunities with our chamber. Join us today and thrive in a collaborative guild dedicated to driving growth and success."
     />
     <meta name="author" content="Ezzze28@github" />
     <meta property="og:title" content="Atlantis City Chamber of Commerce" />
@@ -29,10 +29,7 @@
     <link href="./images/logo.svg" rel="shortcut icon" type="png/icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -54,8 +51,7 @@
       href="./styles/viewports/large.css"
       media="screen and (min-width: 1025px)"
     />
-    <link rel="stylesheet" href="./styles/grid.css" />
-    <title>Atlantis City Chamber of Commerce: Where Business Meets Paradise | Home</title>
+    <title>Atlantis City Chamber | Join</title>
   </head>
   <body>
     <header>
@@ -63,11 +59,10 @@
         <div class="logoContainer">
           <div class="logo">
             <a href="index.html"
-              ><img src="./images/logo.svg" alt="Atlantis City Chamber Logo"
+              ><img src="./images/logo.svg" alt="Horizon Chamber Logo"
             /></a>
           </div>
         </div>
-
         <nav>
           <ul class="mainMenu">
             <li><a href="index.html">Home</a></li>
@@ -78,10 +73,10 @@
           </ul>
         </nav>
         <div class="socialsHeader">
-          <a href="https://www.facebook.com/"
+          <a href="https://www.facebook.com/profile"
             ><i class="fab fa-facebook-square" id="facebook"></i
           ></a>
-          <a href="https://www.linkedin.com/"
+          <a href="https://www.linkedin.com/in/profile"
             ><i class="fab fa-linkedin" id="linkedIn"></i
           ></a>
           <button class="hamburger" id="hamburgerChamber">
@@ -92,7 +87,6 @@
       <h5 class="currentDatetime">
         <span id="now"></span>
       </h5>
-
       <!-- Menu hamburguer modal -->
       <div id="modal">
         <ul class="toggleMenu">
@@ -108,76 +102,74 @@
       <div id="banner" class="hidden">
         Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
-            <div class="grid-container">
-        <div class="gridArea1">
-          <div class="gridAreatitle" id="event">
-            <h2>Event</h2>
-            <h4><i class="fas fa-star"></i> Webinar: Expanding Your Horizons <i class="fas fa-star"></i></h4>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Join us for the grand opening of the Diamond Shack, Thursday at
-              5:00 p.m.
-            </p>
-            <a id="moreInfoLink" href="form.html">More info...</a>
-          </div>
-        </div>
-        <div class="gridArea2" id="weather">
-        </div>
-        <div class="gridArea3" id="join">
-          <div class="gridAreatitle">
-            <button><a href="form.html"> Join Us!</button>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Discover how to join the chamber of commerce and how it benefit
-              your organization!
-            </p>
-          </div>
-        </div>
-        <div class="gridArea4" id="hero">
-
-          <!-- Image optimizated -->
-          <picture id="responsiveImage">
-            <!-- Tablet -->
-            <source
-              media="(min-width 600px) and (max-width: 799px)"
-              srcset="./images/Hero-File/wdd230-tablet.webp"
-            />
-            <!-- Desktop -->
-            <source
-              media="(min-width: 1500px)"
-              srcset="./images/Hero-File/wdd230-1500.webp"
-            />
-            <!-- Mobile -->
-            <img src="./images/Hero-File/wdd230-mobile.webp" alt="Hero Image" />
-          </picture>
-
-          <div class="gridAreatitle">
-            <h2>Atlantis City : Business Paradise</h2>
-          </div>
-          <div class="gridAreaContent">
-            <button> <a href="form.html">Join the chamber</a></button>
-          </div>
-        </div>
-        <div class="gridArea5" id="newsRelease">
-          <div class="gridAreatitle">
-            <h2>News release</h2>
-          </div>
-          <div class="gridAreaContent">
-            <p>
-              Business Empowerment Program: Our flagship initiative is a 
-              comprehensive business mentoring program that pairs experienced
-              industry leaders with aspiring entrepreneurs. Through personalized
-              guidance and support, we aim to nurture innovative ideas, unlock 
-              potential, and enhance overall business strategies.
-            </p>
-          </div>
-        </div>
-
-        <div class="spotlights" id="spotlights">
-        </div>
+      <div class="section-title" id="mainTitle">
+        <h1>Join Atlantis City Chamber of Commerce</h1>
       </div>
+      <section class="form-section">
+        <form action="thankyou.html" method="post">
+          <label for="firstName"
+            >First Name <span class="asterisk">*</span></label
+          >
+          <input type="text" name="firstName" id="firstName" required />
+
+          <label for="lastName"
+            >Last Name <span class="asterisk">*</span></label
+          >
+          <input type="text" name="lastName" id="lastName" required />
+
+          <label for="positionTitle"
+            >Business Position Title
+            <span class="optionalInput">(optional)</span></label
+          >
+          <input
+            type="text"
+            name="positionTitle"
+            id="positionTitle"
+            title="Please enter a valid business position title (minimum 7 characters with only letters, hyphens, and spaces)."
+          />
+          <p id="validationMessage"></p>
+          <label for="email">Email <span class="asterisk">*</span></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@example.com"
+            required
+          />
+          <label for="phone">Phone <span class="asterisk">*</span></label>
+          <input type="tel" name="phone" id="phone" required />
+          <label for="business"
+            >Business Name <span class="asterisk">*</span></label
+          >
+          <input type="tel" name="business" id="business" required />
+          <label for="membershipLevel">Membership</label>
+          <select name="membershipLevel" id="membershipLevel">
+            <option value="" selected disabled>Select Membership Level</option>
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+          </select>
+          <label for="comments"
+            >Aditional comments
+            <span class="optionalInput">(optional)</span></label
+          >
+          <textarea name="comments" id="comments"></textarea>
+          <!-- Hidden field for current date and time -->
+          <input
+            type="hidden"
+            name="formLoadedDateTime"
+            id="formLoadedDateTime"
+          />
+          <p id="validationMessageSubmit"></p>
+          <input
+            id="submitBtn"
+            type="submit"
+            value="Join to Chamber"
+            disabled
+          />
+        </form>
+      </section>
     </main>
     <footer>
       <div class="footerContainer">
@@ -217,7 +209,6 @@
     </footer>
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/weatherapi.js" defer></script>
-    <script src="./scripts/spotlightsapi.js" defer></script>    
+    <script src="./scripts/formValidation.js" defer></script>
   </body>
 </html>

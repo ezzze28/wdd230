@@ -1,0 +1,42 @@
+:root{
+  --primary: #2b2df5;
+  --secondary: #0081c9;
+  --accent1: #edf126;
+  --accent2: #120b0e;
+}
+
+@media screen and (max-width: 600px){
+    #GoogleMaps{
+        width: 80%;
+        height: 400px;
+        } 
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    #GoogleMaps{
+        width: 80%;
+        height: 400px;
+        } 
+}
+
+#GoogleMaps{
+    padding: 2px;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 12px;
+    border: solid 1px var(--accent2);
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 5px var(--accent1);
+    width: 70%;
+    max-width: 660px;
+    height: 400px;
+    }
+  #GoogleMaps:hover{
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
