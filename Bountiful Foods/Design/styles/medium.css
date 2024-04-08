@@ -1,0 +1,43 @@
+@media screen and (max-width: 33.5em) {
+  header div {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px;
+  }
+
+  header div h1 {
+    font-size: 30px;
+  }
+
+  header div h2 {
+    font-size: 26px;
+  }
+
+  .mainMenu {
+    flex-wrap: wrap;
+    background: linear-gradient(#6cffb5, #cfcfcfec);
+    border: none;
+    border-bottom: 1.5px solid #6cffb5;
+    border-top: 1.5px solid #8484af;
+
+  }
+ 
+  .mainMenu li a {
+    padding: 5px;
+    margin: 5px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+    margin-left: -15px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger:hover {
+    background: linear-gradient(#12a7e2, #532ed8);
+  }
+}

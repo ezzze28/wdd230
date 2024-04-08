@@ -1,0 +1,171 @@
+/* Mobile */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1em;
+}
+.gridArea1 {
+  grid-area: 1 / 1 / 2 / 5;
+  border: solid #00445a25;
+  box-shadow: var(--boxShadowBlack);
+  height: auto;
+  padding-bottom: 10px;
+  height: 350px;
+}
+.gridArea3 {
+  grid-area: 2 / 1 / 3 / 5;
+  border: solid #00445a25;
+  box-shadow: var(--boxShadowBlack);
+  margin-bottom: 5px;
+  height: 230px;
+}
+.gridArea4 {
+  grid-area: 3 / 1 / 4 / 5;
+  height: 230px;
+  border: solid #00445a25;
+  box-shadow: var(--boxShadowBlack);
+}
+.gridArea5 {
+  grid-area: 4 / 1 / 5 / 5;
+  height: 230px;
+  border: solid #00445a25;
+  box-shadow: var(--boxShadowBlack);
+}
+
+.gridArea6 {
+  grid-area: 5 / 1 / 6 / 5;
+  border: solid #00445a25;
+  box-shadow: var(--boxShadowBlack);
+  margin-bottom: 5px;
+  height: 230px;
+}
+.gridArea7 {
+    grid-area: 6 / 1 / 7 / 5;
+    border: solid #00445a25;
+    box-shadow: var(--boxShadowBlack);
+    margin-bottom: 5px;
+    height: 150px;
+  }
+.gridArea8 {
+  grid-area: 7 / 1 / 7 / 5;
+  height: 150px;
+  border: solid #00445a25;
+  box-shadow: var(--boxShadowBlack);
+}
+.gridArea2 {
+  grid-area: 8 / 1 / 8 / 5;
+  height: auto;
+  border: solid #00445a25;
+  box-shadow: var(--boxShadowBlack);
+}
+/* Medium */
+@media screen and (min-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .gridArea1 {
+    grid-area: 1 / 1 / 2 / 5;
+    height: 500px;
+  }
+  .gridArea3 {
+    grid-area: 2 / 1 / 3 / 3;
+    height: 230px;
+    border: solid #00445a25;
+    box-shadow: var(--boxShadowBlack);
+    background-color: aqua;
+  }
+
+  .gridArea4 {
+    grid-area: 2 / 3 / 3 / 5;
+    height: 230px;
+  }
+  .gridArea6 {
+    grid-area: 3 / 1 / 3 / 3;
+    height: 230px;
+    margin-top: 10px;
+  }
+
+  .gridArea5 {
+    grid-area: 3 / 3 / 3 / 5;
+    height: 230px;
+  }
+  .gridArea7 {
+    grid-area: 4 / 1 / 5 / 3;
+    height: 150px;
+  }
+
+  .gridArea8 {
+    grid-area: 4 / 3 / 5 / 5;
+    height: 150px;
+    border: solid #00445a25;
+    box-shadow: var(--boxShadowBlack);
+  }
+  .gridArea2 {
+    grid-area: 5 / 1 / 7 / 5;
+    height: auto;
+  }
+}
+
+/* Large */
+@media screen and (min-width: 960px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .gridArea1 {
+    grid-area: 1 / 1 / 5 / 3;
+    height: 580px;
+  }
+  .gridArea2 {
+    grid-area: 5 / 1 / 7 / 3;
+    height: auto;
+    margin-top: -20px;
+  }
+  
+  /* Col 2 */
+  /* Fruits */
+  .gridArea3 {
+    grid-area: 1 / 3 / 3 / 3;
+    height: 280px;
+    margin-top: 10px;
+  }
+  /* Vegetables */
+  .gridArea4 {
+    grid-area: 3 / 3 / 5 / 3;
+    height: 280px;
+  }
+  /* Jams */
+  .gridArea6 {
+    grid-area: 1 / 4 / 3 / 5;
+    height: 280px;
+  }
+
+  /* Col 3 */
+  /* Sizes */
+  .gridArea5 {
+    grid-area: 7 / 3 / 5 / 3;
+    height: 280px;
+  }
+  /* Sherbets */
+  .gridArea7 {
+    grid-area: 3 / 4 / 5 / 5;
+    height: 280px;
+  }
+  #sherbetOptionsContainer .gridAreaContent {
+    margin-top: 50px;
+  }
+  /* Ices */
+  .gridArea8 {
+    grid-area: 5 / 4 / 7 / 5;
+    height: 280px;
+  }
+  #iceOptionsContainer .gridAreaContent {
+    margin-top: 50px;
+  }
+}
