@@ -286,3 +286,23 @@ footer {
 #firstLineFooter p:not(:last-child)::after {
   display: none;
 }
+#threedays {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+#threedays section {
+  margin: 0 auto;
+  align-items: center;
+}
+#threedays section figure{
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  margin: auto; 
+
+}
+

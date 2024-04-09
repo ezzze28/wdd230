@@ -34,7 +34,7 @@
 }
 .gridArea5 {
   grid-area: 4 / 1 / 5 / 5;
-  height: auto;
+  height: 2000px;
   border: solid var(--sunset);
   box-shadow: 3px 3px 30px var(--accent1);
 }

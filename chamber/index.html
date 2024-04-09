@@ -122,7 +122,24 @@
             <a id="moreInfoLink" href="form.html">More info...</a>
           </div>
         </div>
-        <div class="gridArea2" id="weather">
+        <div class="gridArea5" id="weather">
+          <h3>Weather</h3>
+            <div class="weather-container">
+                <picture>
+                    <img id="weather-picture" src="images/weather-status-png.png" alt="lady with umbrella in rain">
+                </picture>
+                <div id="weatherinfo">
+                    <figure>
+                        <img id="weather-icon" src="./images/weather-status-png.png" alt="???">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Temperature: <span id="temperature"></span>&deg;F</p>
+                    <p>Humidity: <span id="humid"></span>&#37;</p>
+                    <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                    <p id="chill">Wind Chill: <span id="windChill">--</span> &deg;F</p>
+                </div>
+
+            </div>
         </div>
         <div class="gridArea3" id="join">
           <div class="gridAreatitle">
@@ -160,7 +177,7 @@
             <button> <a href="form.html">Join the chamber</a></button>
           </div>
         </div>
-        <div class="gridArea5" id="newsRelease">
+        <div class="gridArea2" id="newsRelease">
           <div class="gridAreatitle">
             <h2>News release</h2>
           </div>
@@ -178,6 +195,9 @@
         <div class="spotlights" id="spotlights">
         </div>
       </div>
+      <div id="threedays">
+        <h4>The Next Three Days:</h4>
+    </div> 
     </main>
     <footer>
       <div class="footerContainer">
@@ -218,6 +238,7 @@
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
     <script src="./scripts/weatherapi.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
     <script src="./scripts/spotlightsapi.js" defer></script>    
   </body>
 </html>
