@@ -8,8 +8,8 @@
           "title": "Holy Layout"
         },
         {
-          "url": "",
-          "title": "Media Queries"
+          "url": "https://codepen.io/ezzze28/pen/yLwVvgK",
+          "title": "Javascript Codepen Activity"
         }
       ]
     },
@@ -19,14 +19,6 @@
         {
           "url": "lesson02/index.html",
           "title": "Design Principles"
-        },
-        {
-          "url": "",
-          "title": "Menu"
-        },
-        {
-          "url": "https://codepen.io/jvgar09/pen/NWJbejP",
-          "title": "bom-25"
         }
       ]
     },
@@ -34,20 +26,8 @@
       "week": "Week 3",
       "links": [
         {
-          "url": "week03/images/lanscape.webp",
-          "title": "WebP"
-        },
-        {
-          "url": "week03/lazyload.html",
-          "title": "Lazy"
-        },
-        {
-          "url": "week03/responsive-images.html",
-          "title": "srcset"
-        },
-        {
-          "url": "https://codepen.io/jvgar09/pen/BabmjWL",
-          "title": "localStorage"
+          "url": "lesson03/chamber-site-plan.html",
+          "title": "Chamber Site Plan"
         }
       ]
     },
@@ -55,16 +35,8 @@
       "week": "Week 4",
       "links": [
         {
-          "url": "week04/images/exercises.jpg",
-          "title": "Combinators"
-        },
-        {
-          "url": "week04/tablebuild.html",
-          "title": "Table"
-        },
-        {
-          "url": "week04/form-start/index.html",
-          "title": "Form"
+          "url": "chamber/index.html",
+          "title": "Chamber Home Page"
         }
       ]
     },
@@ -72,20 +44,17 @@
       "week": "Week 5",
       "links": [
         {
-          "url": "https://codepen.io/jvgar09/pen/ExMErWp?editors=1100",
-          "title": "Pseudo-Element"
-        },
+          "url": "lesson05/bom.html",
+          "title": "BOM Top 25"
+        }
+      ]
+    },
+    {
+      "week": "Week 9",
+      "links": [
         {
-          "url": "week05/new-ward-members.json",
-          "title": "JSON"
-        },
-        {
-          "url": "week05/prophets.html",
+          "url": "lesson09/prophets.html",
           "title": "Prophets"
-        },
-        {
-          "url": "week05/weather.html",
-          "title": "Weather API"
         }
       ]
     }
