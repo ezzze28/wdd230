@@ -1,0 +1,76 @@
+{
+    "rentals": [
+        {
+            "type": "~Honda Metro Scooter",
+            "maxPersons": "1",
+            "reservation": {
+                "halfDay3Hrs": "$20",
+                "fullDay": "$30"
+            },
+            "walkIn": {
+                "halfDay3Hrs": "$25",
+                "fullDay": "$35"
+            }
+        },
+        {
+            "type": "~Honda Dio Scooter",
+            "maxPersons": "2",
+            "reservation": {
+                "halfDay3Hrs": "$30",
+                "fullDay": "$40"
+            },
+            "walkIn": {
+                "halfDay3Hrs": "$35",
+                "fullDay": "$45"
+            }
+        },
+        {
+            "type": "~Honda PCX150 Scooter",
+            "maxPersons": "2",
+            "reservation": {
+                "halfDay3Hrs": "$40",
+                "fullDay": "$50"
+            },
+            "walkIn": {
+                "halfDay3Hrs": "$45",
+                "fullDay": "$55"
+            }
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "maxPersons": "4",
+            "reservation": {
+                "halfDay3Hrs": "$50",
+                "fullDay": "$70"
+            },
+            "walkIn": {
+                "halfDay3Hrs": "$60",
+                "fullDay": "$80"
+            }
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "maxPersons": "5",
+            "reservation": {
+                "halfDay3Hrs": "$70",
+                "fullDay": "$100"
+            },
+            "walkIn": {
+                "halfDay3Hrs": "$85",
+                "fullDay": "$125"
+            }
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "maxPersons": "4",
+            "reservation": {
+                "halfDay3Hrs": "$60",
+                "fullDay": "$85"
+            },
+            "walkIn": {
+                "halfDay3Hrs": "$70",
+                "fullDay": "$90"
+            }
+        }
+    ]
+}

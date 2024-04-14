@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the ultimate adventure with Scoots - your premier scooter, ATV, and jeep rental service in Cozumel. Explore the island in style and freedom. Book now!"
+    />
+    <meta name="author" content="Ezzze28@github" />
+    <meta property="og:title" content="Scoots" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://ezzze28.github.io/wdd230/scoots" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/ezzze28/wdd230/main/scoots/images/meta_card.webp"
+    />
+    <meta name="twitter:title" content="Home - Scoots" />
+    <meta
+      name="twitter:description"
+      content="Discover the ultimate adventure with Scoots - your premier scooter, ATV, and jeep rental service in Cozumel. Explore the island in style and freedom. Book now!"
+    />
+    <meta name="twitter:image" content=" ./images/meta_card.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      href="images/logo.svg"
+      rel="shortcut icon"
+      type="svg+xml"
+      sizes="any"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/base.css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/medium.css"
+      media="screen and (min-width: 601px) and (max-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/large.css"
+      media="screen and (min-width: 1025px)"
+    />
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <title>Scoots | Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerInfo">
+        <div class="logoContainer">
+          <div class="logo">
+            <a href="index.html"><h3 id>SCOOTS</h3></a>
+          </div>
+        </div>
+        <nav>
+          <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socialsHeader">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-square" id="facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagarm" id="instagram"></i
+          ></a>
+          <button class="hamburger" id="hamburgerChamber">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <h5 class="currentDatetime">
+        <span id="now"></span>
+      </h5>
+      <!-- Menu hamburguer modal -->
+      <div id="modal">
+        <ul class="toggleMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Image Carousel -->
+      <div id="image-carousel">
+        <!-- Placeholder images -->
+      </div>
+
+      <!-- Call to Action Button -->
+      <button onclick="location.href='booking.html'" type="button">
+        Book Now
+      </button>
+
+      <!-- Summary of Rentals -->
+      <section id="rentals-summary">
+        <h2>Explore Cozumel with Scoots</h2>
+        <p>
+          At Scoots, we offer an array of exciting rental options to make your
+          Cozumel vacation unforgettable. Whether you're cruising the streets on
+          a scooter, conquering rugged terrain on an ATV, or exploring hidden
+          gems in a jeep, we have the perfect ride for you.
+        </p>
+        <h3>Our Rentals Include:</h3>
+        <ul>
+          <li>
+            Scooters: Perfect for zipping around the island and discovering its
+            charms at your own pace.
+          </li>
+          <li>
+            ATVs: Get off the beaten path and explore Cozumel's wild side with
+            our rugged ATV rentals.
+          </li>
+          <li>
+            Jeeps: Experience freedom and flexibility as you navigate Cozumel's
+            scenic routes and off-road trails in one of our top-quality jeeps.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact Information -->
+      <section id="contact-info">
+        <h2>Need Assistance or Have Questions?</h2>
+        <p>
+          Our friendly team is here to help! Contact us via email or phone, or
+          visit our office in Cozumel.
+        </p>
+        <ul>
+          <li>Email: info@scoots.mx</li>
+          <li>Phone: +52 987 123 4567</li>
+        </ul>
+      </section>
+
+      <!-- Social Media Links -->
+      <section id="social-media">
+        <h2>Connect With Us</h2>
+        <!-- Add social media icons with links here -->
+      </section>
+
+      <!-- Cozumel Weather Forecast -->
+      <section id="weather">
+        <h2>Cozumel Weather Forecast</h2>
+        <div id="current-weather">
+          <p>Current Temperature: <span id="current-temp"></span>°C</p>
+          <p>Current Humidity: <span id="current-humidity"></span>%</p>
+        </div>
+        <div id="next-day-forecast">
+          <h3>Next Day's Forecast at 3:00 PM:</h3>
+          <p>Main: <span id="forecast-main"></span></p>
+          <p>Description: <span id="forecast-description"></span></p>
+          <div id="weather-icon"><!-- Placeholder for weather icon --></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img class="scoots-logo" src="images/logo.svg" alt="Scoots logo" />
+      <section class="contact-footer1">
+        <h3>Scoots Center</h3>
+        <p>Calle 11 Sur #567, Centro, Cozumel, Quintana Roo, Mexico</p>
+        <p>Email: info@scoots.mx</p>
+        <p>Phone: +52 987 123 4567</p>
+      </section>
+      <section class="contact-footer2">
+        <h3>Scoots South</h3>
+        <p>
+          Carretera Costera Sur KM 6.5, Zona Sur, Cozumel, Quintana Roo, Mexico
+        </p>
+        <p>Email: south@scoots.mx</p>
+        <p>Phone: +52 987 765 4321</p>
+      </section>
+      <hr />
+      <section class="author">
+        <div id="firstLineFooter">
+          <p>©<span id="currentYear"></span> Scoots</p>
+          <p>
+            <a href="https://www.linkedin.com/in/eze-nicolidakis/"
+              >Ezequiel Nicolidakis</a
+            >
+          </p>
+          <p>WDD 230 Final Project</p>
+          <p id="secondLineFooter"></p>
+        </div>
+      </section>
+    </footer>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/bigmac.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+  </body>
+</html>
